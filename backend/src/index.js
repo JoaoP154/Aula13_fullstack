@@ -1,6 +1,6 @@
 import express from "express"
 import cors from "cors"
-import {persons} from "./persons"
+import {persons} from "./persons.js"
 
 const app = express()
 const port = 5000
@@ -8,7 +8,7 @@ const port = 5000
 app.use(cors())
 
 app.get("/", (request, response) => {
-    response.json(data)    
+    response.json(persons)    
 })
 
 app.listen(port, () => {

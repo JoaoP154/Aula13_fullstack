@@ -3,7 +3,7 @@ const main = document.querySelector("main")
 button.addEventListener("click", searchKrakens)
 
 async function searchKrakens() {
-    const persons = await fetch ("https://localhost:5000").then(Response => Response.json())
+    const persons = await fetch("http://localhost:5000").then(Response => Response.json())
 
     persons.map((persons, index) => {
         main.innerHTML += `
