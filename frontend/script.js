@@ -8,10 +8,10 @@ async function searchKrakens() {
     persons.map((persons, index) => {
         main.innerHTML += `
         <section>
-            <h1>Nome: </h1>
-            <p>E-mail: </p>
-            <p>Idade: </p>
-            <p>Apelido: </p>
+            <h1>Nome: ${persons.name}</h1>
+            <p>E-mail: ${persons.email}</p>
+            <p>Idade: ${persons.age}</p>
+            <p>Apelido: ${persons.nickname}</p>
         </section>
         ${index + 1 === persons.length ? "" : "<hr>"}
         `
